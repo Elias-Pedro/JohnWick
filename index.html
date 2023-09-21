@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menuFechado">
+        <svg onclick="abrirMenu()" class="btnAbrirMenu" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M42.667 106.667A21.328 21.328 0 0 1 64 85.333h277.333a21.334 21.334 0 1 1 0 42.667H64a21.328 21.328 0 0 1-21.333-21.333zm405.333 128H64a21.333 21.333 0 0 0 0 42.666h384a21.333 21.333 0 1 0 0-42.666zM256 384H64a21.334 21.334 0 0 0 0 42.667h192A21.334 21.334 0 0 0 256 384z" data-name="menu-Bold" fill="#ffffff" data-original="#000000" opacity="1" class=""></path></g></svg>
+        <svg onclick="fecharMenu()" class="btnFecharMenu" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.015 512.015" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M298.594 256.011 503.183 51.422c11.776-11.776 11.776-30.81 0-42.586s-30.81-11.776-42.586 0L256.008 213.425 51.418 8.836C39.642-2.94 20.608-2.94 8.832 8.836s-11.776 30.81 0 42.586l204.589 204.589L8.832 460.6c-11.776 11.776-11.776 30.81 0 42.586a30.034 30.034 0 0 0 21.293 8.824c7.71 0 15.42-2.952 21.293-8.824l204.589-204.589 204.589 204.589a30.034 30.034 0 0 0 21.293 8.824c7.71 0 15.42-2.952 21.293-8.824 11.776-11.776 11.776-30.81 0-42.586L298.594 256.011z" fill="#fdfdfd" data-original="#000000" opacity="1" class=""></path></g></svg>
+        <div class="cntrIconsHeader">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 484.951 484.951" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M118.505 115.332h6.938c10.544 0 19.091-8.55 19.091-19.091V23.852c0-10.541-8.547-19.09-19.091-19.09h-6.938c-10.543 0-19.09 8.549-19.09 19.09V96.241c0 10.541 8.547 19.091 19.09 19.091zM363.373 114.859h6.938c10.543 0 19.09-8.549 19.09-19.091v-72.39c0-10.54-8.547-19.089-19.09-19.089h-6.938c-10.545 0-19.092 8.549-19.092 19.089V95.767c.002 10.543 8.549 19.092 19.092 19.092z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path><path d="M453.916 43.558H404.92v57.209c0 19.084-15.525 29.61-34.607 29.61h-6.938c-19.084 0-34.609-15.526-34.609-34.61V43.558H160.053V96.24c0 19.084-15.525 34.61-34.609 34.61h-6.938c-19.083 0-34.608-15.526-34.608-34.61V43.558H31.036C13.923 43.558 0 57.481 0 74.595v375.03c0 17.114 13.923 31.037 31.036 31.037h422.88c17.113 0 31.035-13.923 31.035-31.037V74.595c.002-17.113-13.922-31.037-31.035-31.037zm0 406.067H31.037l-.001-283.213h422.886l.016 283.212-.022.001z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path><path d="M258.498 261.41h55.727a4 4 0 0 0 4-4v-48.255a4 4 0 0 0-4-4h-55.727a4 4 0 0 0-4 4v48.255a4 4 0 0 0 4 4zM349.443 261.41h55.727a4 4 0 0 0 4-4v-48.255a4 4 0 0 0-4-4h-55.727a4 4 0 0 0-4 4v48.255a4 4 0 0 0 4 4zM76.611 340.41h55.726a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4H76.611a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4zM167.555 340.41h55.726a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4h-55.726a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4zM258.499 340.41h55.726a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4h-55.726a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4zM349.443 340.41h55.727a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4h-55.727a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4zM132.337 363.154H76.612a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4h55.726a4 4 0 0 0 4-4v-48.256a4.002 4.002 0 0 0-4.001-4zM223.282 363.154h-55.726a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4h55.726a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4zM314.227 363.154H258.5a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4h55.727a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4zM405.17 363.154h-55.727a4 4 0 0 0-4 4v48.256a4 4 0 0 0 4 4h55.727a4 4 0 0 0 4-4v-48.256a4 4 0 0 0-4-4z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path></g></svg>
+                <p class="textBntHeader">Lançamentos</p>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 510 510" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M488.468 345.72C501.347 340.733 510 328.041 510 314.136v-64.334c0-19.068-15.513-34.582-34.582-34.582h-3.531c10.468-13.552 9.502-33.148-2.921-45.572l-45.491-45.491c-9.831-9.831-24.924-12.688-37.558-7.108-6.786 2.998-14.871 1.485-20.118-3.762-5.247-5.248-6.76-13.333-3.764-20.118 5.581-12.633 2.725-27.727-7.108-37.559l-45.49-45.491c-13.482-13.481-35.422-13.483-48.906 0L55.431 215.22H34.582C15.513 215.22 0 230.734 0 249.802v64.334c0 13.905 8.653 26.598 21.532 31.583 6.917 2.679 11.565 9.465 11.565 16.886s-4.648 14.208-11.565 16.886C8.653 384.48 0 397.173 0 411.076v64.333c0 19.068 15.513 34.582 34.582 34.582h440.836c19.069 0 34.582-15.514 34.582-34.582v-64.333c0-13.903-8.652-26.596-21.531-31.585-6.918-2.679-11.566-9.465-11.566-16.886s4.648-14.207 11.565-16.885zM281.744 31.334a4.587 4.587 0 0 1 6.48-.001l45.49 45.491c1.139 1.139 1.492 2.836.878 4.225-7.963 18.031-3.947 39.512 9.993 53.451 13.94 13.94 35.421 17.955 53.453 9.992 1.387-.612 3.085-.26 4.224.879l45.49 45.49a4.587 4.587 0 0 1 .001 6.48l-17.88 17.879h-78.162L224.784 88.293zm-78.173 78.172L309.286 215.22H97.856zM30 475.409v-64.333c0-1.611.951-3.061 2.366-3.609 18.381-7.119 30.73-25.147 30.73-44.862s-12.35-37.743-30.732-44.862c-1.414-.547-2.364-1.997-2.364-3.607v-64.334a4.588 4.588 0 0 1 4.582-4.582H375v234.771H34.582A4.587 4.587 0 0 1 30 475.409zm450-161.273c0 1.61-.95 3.06-2.365 3.608-18.381 7.119-30.732 25.147-30.732 44.862s12.35 37.743 30.731 44.861c1.415.548 2.366 1.999 2.366 3.609v64.333a4.588 4.588 0 0 1-4.582 4.582H405V245.22h70.418a4.588 4.588 0 0 1 4.582 4.582z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path><path d="M105 284.991h225v30H105zM105 344.991h225v30H105zM105 404.991h225v30H105z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path></g></svg>
+                <p class="textBntHeader">Comprar ingressos</p>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1.3699999999999992,0,0,1.3699999999999992,-4.439999999999994,-4.439999999999994)"><path fill="#bf1533" d="M8 14h8v4H8z" data-original="#bf1533" class="" opacity="0"></path><g fill="#ff3446"><path d="M16 18v-7c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1z" fill="#ff3446" data-original="#ff3446" class="" opacity="0"></path><path d="M7 14V6c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z" fill="#ff3446" data-original="#ff3446" class="" opacity="0"></path><path d="M6 18c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v7z" fill="#ff3446" data-original="#ff3446" class="" opacity="0"></path></g><path d="M17 10.5c-.28 0-.5-.22-.5-.5V6c0-.83-.67-1.5-1.5-1.5H9c-.83 0-1.5.67-1.5 1.5v4c0 .28-.22.5-.5.5s-.5-.22-.5-.5V6A2.5 2.5 0 0 1 9 3.5h6A2.5 2.5 0 0 1 17.5 6v4c0 .28-.22.5-.5.5z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path><path d="M8 18.5H6c-.83 0-1.5-.67-1.5-1.5v-6c0-.83.67-1.5 1.5-1.5h1c.83 0 1.5.67 1.5 1.5v7c0 .28-.22.5-.5.5zm-2-8c-.28 0-.5.22-.5.5v6c0 .28.22.5.5.5h1.5V11c0-.28-.22-.5-.5-.5zM18 18.5h-2c-.28 0-.5-.22-.5-.5v-7c0-.83.67-1.5 1.5-1.5h1c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5zm-1.5-1H18c.28 0 .5-.22.5-.5v-6c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path><path d="M16 14.5H8c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h8c.28 0 .5.22.5.5s-.22.5-.5.5zM16 18.5H8c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h8c.28 0 .5.22.5.5s-.22.5-.5.5zM15 20.5H9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h6c.28 0 .5.22.5.5s-.22.5-.5.5z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path><path d="M12 20.5c-.28 0-.5-.22-.5-.5v-2c0-.28.22-.5.5-.5s.5.22.5.5v2c0 .28-.22.5-.5.5zM10 6.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM14 6.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM10 9.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM14 9.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path></g></svg>
+                <p class="textBntHeader">Cadeiras disponíveis</p>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.986 511.986" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M185.08 114.947c1.405 7.504 8.849 13.422 17.63 11.78 8.526-1.78 13.375-9.955 11.78-17.64-1.873-8.936-10.699-13.914-19.061-11.42-7.469 2.229-11.887 9.942-10.349 17.28z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path><path d="M508.225 324.453c-81.619-237.586-76.004-221.308-76.353-222.117-8.496-19.663-24.988-34.949-45.249-41.94-2.901-1.001-167.187-39.431-171.935-41.075-14.561-5.043-34.791-2.216-48.993 10.846L24.906 159.716C9.078 174.274 0 194.998 0 216.576v229.41c0 27.035 21.877 49.03 48.768 49.03h301.205c26.891 0 48.768-21.995 48.768-49.03v-22.174l83.955-35.93c24.409-10.563 35.764-38.912 25.529-63.429zM349.973 465.016H48.768c-10.349 0-18.768-8.537-18.768-19.03v-229.41c0-13.209 5.546-25.887 15.217-34.782 120.62-110.988 46.064-41.76 141.269-129.559 4.965-4.576 11.82-6.414 18.619-4.364 6.077 1.815-4.646-6.919 148.421 133.925 9.669 8.894 15.215 21.571 15.215 34.78v229.41c-.001 10.493-8.42 19.03-18.768 19.03zm120.864-104.691L398.74 391.18V216.576c0-21.578-9.078-42.302-24.904-56.858L268.988 63.241l108.503 25.746c11.844 4.287 21.498 13.261 26.626 24.757 81.464 237.133 75.969 221.217 76.326 222.038 4.096 9.468-.238 20.489-9.606 24.543z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path><path d="M241.959 202.297c-7.637-3.206-16.43.39-19.636 8.028L149.3 384.365c-4.166 9.929 3.193 20.808 13.825 20.808 5.861 0 11.429-3.457 13.839-9.2l73.023-174.04c3.205-7.64-.389-16.431-8.028-19.636zM171.659 245.52c0-28.95-21.203-52.503-47.266-52.503S77.128 216.57 77.128 245.52s21.203 52.503 47.266 52.503 47.265-23.553 47.265-52.503zm-47.265 22.503c-9.359 0-17.266-10.305-17.266-22.503s7.906-22.503 17.266-22.503 17.266 10.305 17.266 22.503c-.001 12.198-7.907 22.503-17.266 22.503zM275.751 312.011c-26.063 0-47.266 23.553-47.266 52.503s21.203 52.503 47.266 52.503 47.266-23.553 47.266-52.503-21.204-52.503-47.266-52.503zm0 75.006c-9.359 0-17.266-10.305-17.266-22.503s7.906-22.503 17.266-22.503 17.266 10.305 17.266 22.503-7.907 22.503-17.266 22.503z" fill="#ffffff" data-original="#000000" opacity="1" class=""></path></g></svg>
+                <p class="textBntHeader">Promoções</p>
+            </span>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="cntrInfosFilme">
+            <div class="boxInfosFilme">
+                <span class="data-genero">
+                    <p>2019</p>
+                    <p>Ação, Suspense</p>
+                </span>
+                <hr>
+                <h1>John Wick</h1>
+                <p>Capítulo 3 - PARABELLUM (2019)</p>
+                <hr>
+                <span class="ingressos-trailer">
+                    <button class="btningressos">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 30.051 30.051" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m19.982 14.438-6.24-4.536a.752.752 0 0 0-1.195.607v9.069a.75.75 0 0 0 1.195.606l6.24-4.532a.747.747 0 0 0 0-1.214z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path><path d="M15.026.002C6.726.002 0 6.728 0 15.028c0 8.297 6.726 15.021 15.026 15.021 8.298 0 15.025-6.725 15.025-15.021.001-8.3-6.727-15.026-15.025-15.026zm0 27.54c-6.912 0-12.516-5.601-12.516-12.514 0-6.91 5.604-12.518 12.516-12.518 6.911 0 12.514 5.607 12.514 12.518.001 6.913-5.603 12.514-12.514 12.514z" fill="#ffffff" data-original="#000000" class="" opacity="1"></path></g></svg>
+                        <p>Assistir agora</p>
+                    </button>
+                    <button class="btnTrailer">
+                        <p>Trailer</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="M187.368 146.928V355.8l195.624-104.432z" style="" fill="#fdfdfd" data-original="#ffffff" opacity="0" class=""></path><path d="M256 .376C114.616.376 0 114.824 0 256s114.616 255.624 256 255.624S512 397.176 512 256 397.384.376 256 .376zm-71.504 146.552 195.624 104.44L184.496 355.8V146.928z" style="" fill="#ffffff" data-original="#db2b42" class="hovered-path" opacity="1"></path></g></svg>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="cntrMaisFilmes">
+            <div class="cntrTrailerMaisFilmes cntrTrailerMaisFilmes1" onmouseenter="maisFilmes('1')" onmouseout="fecharInfosMaisFilmes('1')">
+                <span class="nomeMaisFilmes1">
+                    <p>John Wick</p>
+                    <p>De volta ao jogo</p>
+                </span>
+                <img class="imgMaisFilmes1" onmouseenter="maisFilmes('1')" src="img/filme_1.jpg" alt="Capa do filme John Wick 1">
+            </div>
+            <div class="cntrTrailerMaisFilmes cntrTrailerMaisFilmes2" onmouseenter="maisFilmes('2')" onmouseout="fecharInfosMaisFilmes('2')">
+                <span class="nomeMaisFilmes2 ">
+                    <p>John Wick</p>
+                    <p>Um novo dia para matar</p>
+                </span>
+                <img class="imgMaisFilmes2" onmouseenter="maisFilmes('2')" src="img/filme_2.jpg" alt="Capa do filme John Wick 2">
+            </div>
+            <div class="cntrTrailerMaisFilmes cntrTrailerMaisFilmes3" onmouseenter="maisFilmes('3')" onmouseout="fecharInfosMaisFilmes('3')">
+                <span class="nomeMaisFilmes3">
+                    <p>John Wick</p>
+                    <p>Parabellum</p>
+                </span>
+                <img class="imgMaisFilmes3" onmouseenter="maisFilmes('3')" src="img/filme_3.jpg" alt="Capa do filme John Wick 3">
+
+            </div>
+            <div class="cntrTrailerMaisFilmes cntrTrailerMaisFilmes4" onmouseenter="maisFilmes('4')" onmouseout="fecharInfosMaisFilmes('4')">
+                <span class="nomeMaisFilmes4">
+                    <p>John Wick</p>
+                    <p>Baba Yaga</p>
+                </span>
+                <img class="imgMaisFilmes4" onmouseenter="maisFilmes('4')" src="img/filme_4.jpg" alt="Capa do filme John Wick 4">
+
+            </div>
+        </div>
+
+        <div class="cntrMaisFilmesMobile">
+            <div class="cntrTrailerMaisFilmesMobile">
+                <img src="img/filme_1.jpg" alt="Capa do filme John Wick 1">
+
+                <span>
+                    <p>John Wick</p>
+                    <p>De volta ao jogo</p>
+                </span>
+            </div>
+
+            <div class="cntrTrailerMaisFilmesMobile">
+                <img src="img/filme_2.jpg" alt="Capa do filme John Wick 1">
+
+                <span>
+                    <p>John Wick</p>
+                    <p>Um novo dia para matar</p>
+                </span>
+            </div>
+
+            <div class="cntrTrailerMaisFilmesMobile">
+                <img src="img/filme_3.jpg" alt="Capa do filme John Wick 1">
+
+                <span>
+                    <p>John Wick</p>
+                    <p>Parabellum</p>
+                </span>
+            </div>
+
+            <div class="cntrTrailerMaisFilmesMobile">
+                <img src="img/filme_4.jpg" alt="Capa do filme John Wick 1">
+
+                <span>
+                    <p>John Wick</p>
+                    <p>Baba Yaga</p>
+                </span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
